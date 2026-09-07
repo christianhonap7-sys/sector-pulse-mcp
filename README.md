@@ -46,9 +46,12 @@ npx -y mcp-remote https://sector-pulse-omega.vercel.app/api/mcp --header "x-api-
 
 ## Keys
 
-The same key works for the REST API and the MCP server. Founding tier: $39 a month, Sector Pulse Pro membership included, 10 founding spots, price locked for as long as you stay. Keys are emailed within a minute of checkout.
+The same key works for the REST API and the MCP server. Two ways to get one, both emailed within a minute of checkout:
 
-https://sector-pulse-omega.vercel.app/pricing
+- **Pay as you go:** $10 for 2,000 calls, $25 for 6,000. One call is one credit on every tool and endpoint; credits never expire. One email at 10% left; past zero, calls return 402 with a top-up link. API only.
+- **Founding tier:** $39 a month, Sector Pulse Pro membership included, 10 founding spots, price locked for as long as you stay.
+
+https://sector-pulse-omega.vercel.app/pricing · top up an existing key at https://sector-pulse-omega.vercel.app/topup
 
 ## Rate limits
 
