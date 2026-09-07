@@ -1,0 +1,22 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.christianhonap7-sys/sector-pulse",
+  "title": "Sector Pulse",
+  "description": "Live US sector rotation: 30 sector baskets ranked every session, versioned rosters, daily record.",
+  "version": "1.0.0",
+  "websiteUrl": "https://sector-pulse-omega.vercel.app/api-docs",
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://sector-pulse-omega.vercel.app/api/mcp",
+      "headers": [
+        {
+          "name": "X-API-Key",
+          "description": "Sector API key (SPK-\u2026). Optional: get_sectors works without it; get_roster and get_history need it.",
+          "isRequired": false,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}
