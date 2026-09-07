@@ -4,9 +4,9 @@ Live US sector rotation for agents. Sector Pulse tracks 30 US equity sector bask
 
 This is a hosted (remote) server over Streamable HTTP. There is nothing to install.
 
-- Endpoint: `https://sector-pulse-omega.vercel.app/api/mcp`
-- Docs: https://sector-pulse-omega.vercel.app/api-docs
-- OpenAPI: https://sector-pulse-omega.vercel.app/openapi.json
+- Endpoint: `https://sector-pulse.app/api/mcp`
+- Docs: https://sector-pulse.app/api-docs
+- OpenAPI: https://sector-pulse.app/openapi.json
 - Official registry: `io.github.christianhonap7-sys/sector-pulse`
 
 ![Sector Pulse MCP](mcp-server.png)
@@ -29,7 +29,7 @@ Claude Desktop, Cursor, and other Streamable HTTP clients:
 {
   "mcpServers": {
     "sector-pulse": {
-      "url": "https://sector-pulse-omega.vercel.app/api/mcp",
+      "url": "https://sector-pulse.app/api/mcp",
       "headers": { "x-api-key": "SPK-YOURKEYHERE" }
     }
   }
@@ -41,7 +41,7 @@ Leave out the `headers` block to use `get_sectors` without a key.
 Clients that only speak stdio:
 
 ```bash
-npx -y mcp-remote https://sector-pulse-omega.vercel.app/api/mcp --header "x-api-key: SPK-YOURKEYHERE"
+npx -y mcp-remote https://sector-pulse.app/api/mcp --header "x-api-key: SPK-YOURKEYHERE"
 ```
 
 ## Keys
@@ -51,7 +51,7 @@ The same key works for the REST API and the MCP server. Two ways to get one, bot
 - **Pay as you go:** $10 for 2,000 calls, $25 for 6,000. One call is one credit on every tool and endpoint; credits never expire. One email at 10% left; past zero, calls return 402 with a top-up link. API only.
 - **Founding tier:** $39 a month, Sector Pulse Pro membership included, 10 founding spots, price locked for as long as you stay.
 
-https://sector-pulse-omega.vercel.app/pricing · top up an existing key at https://sector-pulse-omega.vercel.app/topup
+https://sector-pulse.app/pricing · top up an existing key at https://sector-pulse.app/topup
 
 ## Rate limits
 

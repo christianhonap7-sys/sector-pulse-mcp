@@ -3,12 +3,12 @@
   "name": "io.github.christianhonap7-sys/sector-pulse",
   "title": "Sector Pulse",
   "description": "Live US sector rotation: 30 sector baskets ranked every session, versioned rosters, daily record.",
-  "version": "1.0.0",
-  "websiteUrl": "https://sector-pulse-omega.vercel.app/api-docs",
+  "version": "1.1.0",
+  "websiteUrl": "https://sector-pulse.app/api-docs",
   "remotes": [
     {
       "type": "streamable-http",
-      "url": "https://sector-pulse-omega.vercel.app/api/mcp",
+      "url": "https://sector-pulse.app/api/mcp",
       "headers": [
         {
           "name": "X-API-Key",
