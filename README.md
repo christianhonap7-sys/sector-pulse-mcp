@@ -60,3 +60,7 @@ https://sector-pulse.app/pricing · top up an existing key at https://sector-pul
 ## Terms
 
 Educational tool, not financial advice. Derived analytics computed by Sector Pulse, a product of Apex Infra LLC. Keys are for your own applications; redistributing the feed is not permitted. Support: support@apexinfrallc.com
+
+## License
+
+The documentation and configuration in this repository are MIT licensed. The hosted service is governed by the terms on the [API docs](https://sector-pulse.app/api-docs).
