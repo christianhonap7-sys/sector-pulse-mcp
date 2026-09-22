@@ -15,7 +15,7 @@ This is a hosted (remote) server over Streamable HTTP. There is nothing to insta
 
 | Tool | Key | What it returns |
 |---|---|---|
-| `get_sectors` | none | The live board: all 30 baskets with average move, median, breadth, and three rank bases (session, close basis, previous close). 10 calls a minute per IP. |
+| `get_sectors` | required (free key works) | The live board: all 30 baskets with average move, median, breadth, and three rank bases (session, close basis, previous close). |
 | `get_roster` | required | The ticker lists behind each basket, versioned and immutable. Pass `version` for an archived roster. |
 | `get_history` | required | The daily close record for a date (rank, move, breadth per sector), or 5-minute intraday rows with `intraday: true`. Daily from 2026-07-21, intraday from 2026-08-19. |
 
@@ -36,7 +36,7 @@ Claude Desktop, Cursor, and other Streamable HTTP clients:
 }
 ```
 
-Leave out the `headers` block to use `get_sectors` without a key.
+Every tool needs a key. A free key (100 calls a day, every tool) is emailed from https://sector-pulse.app/api-docs#free-key; ChatGPT and claude.ai connectors take the key in the address instead: `https://sector-pulse.app/api/mcp?key=SPK-YOURKEYHERE`.
 
 Clients that only speak stdio:
 
@@ -46,7 +46,9 @@ npx -y mcp-remote https://sector-pulse.app/api/mcp --header "x-api-key: SPK-YOUR
 
 ## Keys
 
-The same key works for the REST API and the MCP server. Two ways to get one, both emailed within a minute of checkout:
+The same key works for the REST API and the MCP server. Three ways to get one, all emailed within a minute:
+
+- **Free key:** 100 calls a day on every tool and endpoint, no card. Enter your email at https://sector-pulse.app/api-docs#free-key.
 
 - **Pay as you go:** $10 for 2,000 calls, $25 for 6,000. One call is one credit on every tool and endpoint; credits never expire. One email at 10% left; past zero, calls return 402 with a top-up link. API only.
 - **Founding tier:** $39 a month, Sector Pulse Pro membership included, 10 founding spots, price locked for as long as you stay.
@@ -55,7 +57,7 @@ https://sector-pulse.app/pricing · top up an existing key at https://sector-pul
 
 ## Rate limits
 
-10 requests a minute per key across REST and MCP. Free `get_sectors` calls: 10 a minute per IP.
+10 requests a minute per key across REST and MCP. Free keys: 100 calls a day.
 
 ## Terms
 
