@@ -3,7 +3,7 @@
   "name": "io.github.christianhonap7-sys/sector-pulse",
   "title": "Sector Pulse",
   "description": "Live US sector rotation: 30 sector baskets ranked every session, versioned rosters, daily record.",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "websiteUrl": "https://sector-pulse.app/api-docs",
   "remotes": [
     {
@@ -12,8 +12,8 @@
       "headers": [
         {
           "name": "X-API-Key",
-          "description": "Sector API key (SPK-\u2026). Optional: get_sectors works without it; get_roster and get_history need it.",
-          "isRequired": false,
+          "description": "Sector API key (SPK-\u2026), required by every tool. A free key (100 calls a day) is sent by email from https://sector-pulse.app/api-docs#free-key.",
+          "isRequired": true,
           "isSecret": true
         }
       ]
